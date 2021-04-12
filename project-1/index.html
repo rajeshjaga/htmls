@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <style>
+      body {
+        margin: 0;
+        min-height: 100vh;
+        background: #000;
+        display: grid;
+        place-items: center;
+      }
+      #name {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        border-radius: 7px;
+        border: none;
+      }
+      button {
+        cursor: pointer;
+        border-radius: 7px;
+        border: none;
+        font-size: 1.2rem;
+        font-weight: 700;
+        background: #1cf;
+        padding: 0.4rem 2rem;
+      }
+      button:hover {
+        background: rgb(10, 137, 172);
+      }
+    </style>
+  </head>
+  <body>
+    <form id="form">
+      <input type="text" name="name" id="name" />
+      <button type="submit" id="submit">add</button>
+    </form>
+    <script src="./script.js"></script>
+  </body>
+</html>

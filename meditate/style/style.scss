@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    font-family: 'Poppins';
+}
+
+.app {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    .time,
+    .music-selector,
+    .buttons {
+        height: 100vh;
+        width: 30%;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .buttons {
+        position: relative;
+        svg {
+            position: absolute;
+            height: 50%;
+            width: 50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            pointer-events: none;
+        }
+        img {
+            cursor: pointer;
+        }
+        #time {
+            position: absolute;
+            bottom: 20%;
+            font-size: 1.9em;
+            font-weight: 600;
+        }
+    }
+    .time {
+        button {
+            outline: none;
+            background-color: transparent;
+            padding: 0.8em;
+            border-radius: 120px;
+            border: 1px solid #fcfcfc;
+            color: #fcfcfc;
+            font-size: 1.6em;
+            cursor: pointer;
+        }
+    }
+}
+
+video {
+    z-index: -1;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    object-fit: cover;
+}
+
+.music-selector {
+    button {
+        cursor: pointer;
+        border: none;
+        background-color: transparent;
+        img {
+            object-fit: cover;
+        }
+    }
+}

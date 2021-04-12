@@ -1,0 +1,152 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+}
+
+img.bc {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  -o-object-position: top;
+     object-position: top;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.date {
+  color: #a39f9f;
+  font-family: 'Annifont';
+  height: 10vh;
+  width: 100px;
+  position: absolute;
+  top: 80%;
+  left: 5%;
+}
+
+.date h3 {
+  font-size: 3rem;
+  opacity: 1;
+}
+
+header {
+  height: 20vh;
+  width: 40%;
+  background-color: white;
+  overflow: hidden;
+}
+
+header .nav-closed {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 20vh;
+}
+
+header .nav-closed ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .nav-closed ul li {
+  color: #202020;
+  font-family: 'Open sans';
+  font-size: 16px;
+  cursor: pointer;
+  -webkit-transition: 0.65s all;
+  transition: 0.65s all;
+}
+
+header .nav-closed ul li:hover {
+  color: #db7676;
+}
+
+header .nav-closed h1 {
+  font-family: 'Josefin sans';
+  font-size: 3.5rem;
+  color: #202020;
+  -webkit-transition: 1s ease-in all;
+  transition: 1s ease-in all;
+  cursor: pointer;
+}
+
+header .nav-closed h1:hover {
+  color: #f07a26;
+}
+
+header .nav-opened {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 80vh;
+  width: auto;
+  background-color: rgba(73, 73, 73, 0.123);
+}
+
+header .nav-opened h1 {
+  font-family: 'Josefin sans';
+  font-size: 3rem;
+  color: #202020;
+  text-transform: capitalize;
+  -webkit-transition: 0.5s ease-in all;
+  transition: 0.5s ease-in all;
+}
+
+header .nav-opened h1:hover {
+  color: #f07a26;
+}
+
+header .nav-opened ul {
+  font-family: 'Open sans';
+  font-weight: 600;
+  height: 50%;
+  text-transform: capitalize;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+}
+
+header .nav-opened ul li {
+  color: #202020;
+  list-style: none;
+  -webkit-transition: 0.65 all;
+  transition: 0.65 all;
+}
+
+header .nav-opened ul li:hover {
+  color: #db7676;
+}
+/*# sourceMappingURL=style.css.map */

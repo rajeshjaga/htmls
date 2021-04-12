@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-family: sans-serif;
+  background-image: url("https://static.toiimg.com/thumb/77851302.cms?width=680&height=512&imgsize=156719");
+  background-repeat: repeat-x;
+  background-position: fixed;
+}
+.student {
+  height: 250px;
+  width: 80%;
+  margin: 0 auto;
+  background: orange;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+strong {
+  font-weight: 600;
+  margin-right: 10px;
+}
+.image-student {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  object-position: top right;
+  padding: 8px 16px;
+}
+.student .container {
+  display: inline;
+}
+main {
+  height: auto;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  background: azure;
+}
+nav {
+  width: 20%;
+  background: rgb(192, 223, 17);
+  padding: 16px 24px;
+}
+li {
+  margin-top: 16px;
+  list-style: none;
+  text-transform: capitalize;
+  font-size: 24px;
+}
+a {
+  text-decoration: none;
+}
+a.nav-links {
+  color: #111;
+}
+section {
+  padding: 32px 64px;
+}
+ol li {
+  list-style: decimal;
+  height: 30px;
+}
+p {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+span {
+  color: rgb(133, 133, 133);
+  text-transform: lowercase;
+}
+a.button {
+  display: block;
+  width: max-content;
+  padding: 8px 16px;
+  background: aqua;
+  color: #111;
+  margin: 50px 0;
+}
+iframe {
+  height: 60%;
+  width: 80%;
+}
+table,
+tr,
+td {
+  border: 1px solid #111;
+}

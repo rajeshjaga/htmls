@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  cursor: none;
+}
+.cursor {
+  height: 3rem;
+  width: 3rem;
+  border: 2px solid black;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 100;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: 0.5s all ease;
+  transition-property: background, transform;
+  transform-origin: 100% 100%;
+
+  backdrop-filter: grayscale;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 90%;
+  margin: auto;
+  min-height: 10vh;
+  text-transform: capitalize;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav ul li {
+  margin: 0px 30px;
+  padding: 10px;
+  z-index: 100;
+  cursor: none;
+}
+nav ul li,
+nav h1 {
+  font-size: 1.5rem;
+  padding: 10px;
+  cursor: pointer;
+}
+section {
+  height: 90vh;
+  width: 100%;
+}
+.img {
+  height: 50vh;
+  position: relative;
+  left: 50%;
+  margin-top: 5rem;
+  transform: translateX(-50%);
+  z-index: -3;
+}
+.frontdes {
+  width: 30%;
+  position: sticky;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 5%;
+  margin-top: auto;
+  text-align: center;
+}
+.linkgrow {
+  transform: scale(2);
+  background-color: black;
+}
+.hoverlink {
+  color: white;
+}

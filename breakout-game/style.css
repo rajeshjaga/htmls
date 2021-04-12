@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font-family: monospace;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  place-items: center;
+}
+.container {
+  position: relative;
+  height: 370px;
+  width: 785px;
+  margin-top: -10rem;
+  border: 1px solid #000;
+}
+.block {
+  position: absolute;
+  background: rebeccapurple;
+  width: 100px;
+  height: 20px;
+}
+.user {
+  position: absolute;
+  background: crimson;
+  width: 120px;
+  height: 20px;
+}
+.ball {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #033552;
+  transition: all 0.1s ease;
+}
+.score {
+  font-size: 3rem;
+  text-transform: capitalize;
+}
+button:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.3));
+  background: rgb(21, 85, 21);
+}
+button {
+  padding: 1rem 5rem;
+  font-size: 1.7rem;
+  background: forestgreen;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.1));
+  transition: 0.25s all ease-in-out;
+}

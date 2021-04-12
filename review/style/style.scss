@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(243, 243, 243);
+    font-family: "SF Pro Display";
+    color: #1c1c1c;
+}
+
+h1 {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 2.8em;
+    padding: 0.5em 0em;
+    color: #1c1c1c;
+    font-family: "Roboto";
+}
+
+.container {
+    min-height: 25%;
+    max-width: 50%;
+    margin: 0 auto;
+    background-color: #fcfcfc;
+    padding: 3em 2.4em;
+    border-radius: 5px;
+    box-shadow: 0px 10px 20px rgba(10, 10, 10, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    .img {
+        min-width: 30%;
+        img {
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+    }
+    .about {
+        .name {
+            font-weight: bold;
+            font-size: 1.8em;
+            padding: 0.5em 0em;
+        }
+        span {
+            color: #15c7c7;
+            padding: 0.5em 0em;
+        }
+        .desc {
+            min-width: 30%;
+            padding: 0.3em 0em;
+            color: #525252;
+        }
+    }
+    button {
+        padding: 0.5em 2em;
+        background-color: #15c7c7;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        position: absolute;
+        bottom: 1em;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.nav {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .prev,
+    .next {
+        width: auto;
+        height: auto;
+        border-radius: 50%;
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:hover {
+            color: #15c7c7;
+            background-color: rgba(200, 200, 200, 0.4);
+        }
+        i {
+            transform: scale(1.5);
+        }
+    }
+}

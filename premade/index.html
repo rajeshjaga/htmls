@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <nav class="site-nav grid">
+        <h1>Cosmo Junkie</h1>
+        <ul>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#Contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="welcome" class="grid">
+        <div class="welcome-text">
+            <h2>Space Enthusiast <br/>& javascript developer</h2>
+            <p class="leading">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, perspiciatis.</p>
+            <a href="#portfolio" class="button">View My Work</a>
+        </div>
+        <div class="img-container">
+            <img src="./assets/banner_image.png" alt="background">
+        </div>
+    </section>
+    <section id="portfolio">
+        <h3>Some Of My Work</h3>
+        <div class="projects grid">
+            <a href="#">
+                <img src="./assets/project_1.png" alt="space race image">
+                <h4>Space Racing Game</h4>
+            </a>
+            <a href="#">
+                <img src="./assets/project_2.png" alt="space boy image">
+                <h4>Planet Boy API</h4>
+            </a>
+            <a href="#">
+                <img src="./assets/project_3.png" alt="captain cosmo image">
+                <h4>Captain Cosmo Blog</h4>
+            </a>
+        </div>
+    </section>
+    <section id="skills">
+        <h3>My Skills</h3>
+        <ul class="grid">
+            <li>
+                <img src="./assets/comet_1.svg" alt="comet">
+                <h3>Javascript</h3>
+            </li>
+            <li>
+                <img src="./assets/comet_2.svg" alt="comet">
+                <h3>Python</h3>
+            </li>
+            <li>
+                <img src="./assets/comet_3.svg" alt="comet">
+                <h3>Web Designing</h3>
+            </li>
+            <li>
+                <img src="./assets/comet_4.svg" alt="comet">
+                <h3>UI/UX Designing</h3>
+            </li>
+        </ul>
+    </section>
+    <section id="Contact">
+        <h3>Get in Touch</h3>
+        <p class="leading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, dolorum!</p>
+        <form>
+            <label for="Name">Name</label>
+            <input type="text">
+            <label for="Email">Email</label>
+            <input type="email">
+            <label>Your Message</label>
+            <textarea></textarea>
+            <button class="button">Submit</button>
+        </form>
+    </section>
+    <footer>
+        <div class="grid">
+            <p class="copyright">
+                Copyright 2020 Space Junkie
+            </p>
+            <ul class="social">
+                <li>
+                    <a href="#"><img src="./assets/icon_fb.svg" alt="facebook"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="./assets/icon_tw.svg" alt="twitter"></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script src="./script/app.js">
+    </script>
+</body>
+
+</html>

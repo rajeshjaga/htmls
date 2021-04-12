@@ -1,0 +1,19 @@
+.grid {
+  height: 600px;
+  width: 500px;
+  background: yellow;
+  position: relative;
+  overflow: hidden;
+}
+.doodler {
+  height: 100px;
+  width: 60px;
+  background: red;
+  position: absolute;
+}
+.platform {
+  height: 10px;
+  width: 90px;
+  position: absolute;
+  background: green;
+}

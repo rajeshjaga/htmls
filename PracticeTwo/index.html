@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/fontawesome.css">
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/brands.css">
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <title>PracticeTwo</title>
+</head>
+
+<body>
+    <div class="menu">
+        <div class="bar One "></div>
+        <div class="bar Two "></div>
+        <div class="bar Three "></div>
+    </div>
+    <section>
+        <button class="accordion" data-data="first">section 1</button>
+        <div class="panel first display">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt, reiciendis assumenda. Fugit nulla, id saepe commodi iste magnam tenetur quisquam consequuntur laboriosam iure aliquam optio quidem ducimus aperiam. Suscipit, facilis!</p>
+        </div>
+        <button class="accordion" data-data="second">section 2</button>
+        <div class="panel second display">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt, reiciendis assumenda. Fugit nulla, id saepe commodi iste magnam tenetur quisquam consequuntur laboriosam iure aliquam optio quidem ducimus aperiam. Suscipit, facilis!</p>
+        </div>
+        <button class="accordion" data-data="third">section 3</button>
+        <div class="panel third display">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt, reiciendis assumenda. Fugit nulla, id saepe commodi iste magnam tenetur quisquam consequuntur laboriosam iure aliquam optio quidem ducimus aperiam. Suscipit, facilis!</p>
+        </div>
+    </section>
+    <section>
+        <div class="tab">
+            <button class="tabLinks" data-class="Venice">Venice</button>
+            <button class="tabLinks" data-class="Paris">Paris</button>
+            <button class="tabLinks" data-class="NewYork">New York</button>
+        </div>
+        <div id="Venice" class="tabContent Venice">
+            <h3>Venice</h3>
+            <p>Venice is a city in northeastern Italy and the capital of the Veneto region.</p>
+        </div>
+        <div id="Paris" class="tabContent Paris">
+            <h3>Paris</h3>
+            <p>Paris is the capital and most populous city of France.</p>
+        </div>
+        <div id="NewYork" class="tabContent NewYork">
+            <h3>New York</h3>
+            <p>New York City, often called simply New York and abbreviated as NYC, is the most populous city in the United States. </p>
+        </div>
+    </section>
+    <nav class="topNav">
+        <h1>logo</h1>
+        <ul>
+            <li>Home</li>
+            <li>Projects</li>
+            <li>Contact</li>
+            <li>About us</li>
+        </ul>
+        <i class="fa fa-bars"></i>
+    </nav>
+    <section id="switch">
+        <div class="checkbox-container">
+            <input type="checkbox" name="checkbox" id="checkbox">
+            <div class="container">
+                <label for="checkbox">
+                    <i class="fa fa-sun"></i>
+                    <i class="fa fa-moon"></i>
+                    <div class="pointer"></div>
+                </label>
+            </div>
+        </div>
+    </section>
+    <script src="./app.js">
+    </script>
+</body>
+
+</html>

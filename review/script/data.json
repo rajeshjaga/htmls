@@ -1,0 +1,26 @@
+{
+    "0": {
+        "image": "./assests/mkbhd.jpg",
+        "name": "Marques Brownlee",
+        "profession": "Tech Youtuber",
+        "description": "Marques Keith Brownlee, also known professionally as MKBHD, is an American YouTuber and former professional ultimate frisbee player, best known for his technology-focused videos and podcast. The channel, whose name is a concatenation of MKB(Brownlee 's initials) and HD (for high-definition), has over 11 million subscribers and over 1.7 billion total video views. In August 2013, Vic Gundotra, former Senior Vice President, Social for Google,called Brownlee the best technology reviewer on the planet right now ' "
+    },
+    "1": {
+        "image": "./assests/peter.jpg",
+        "name": "Peter McKinnon",
+        "profession": "Photographer",
+        "description": "Canadian photographer who educates viewers about photography and cinematography on his eponymous YouTube channel. He has been featured in Magic Magazine, Popular Photography Magazine and more.He is an illusionist who released a DVD of illusions called Lock Stock & Riot."
+    },
+    "2": {
+        "image": "./assests/ijustine.jpg",
+        "name": "iJustine",
+        "profession": "Tech Youtuber",
+        "description": "Justine Ezarik is an American YouTube personality, host, and actress. She is best known as iJustine, with over a billion views across her YouTube channels since 2006. She gained attention as a lifecaster who communicated directly with her millions of viewers on her Justin.tv channel, ijustine.tv. She acquired notability in roles variously described as a lifecasting star, a new media star, or one of the Web's most popular lifecasters. She currently posts videos on her main channel iJustine."
+    },
+    "3": {
+        "image": "./assests/andrea-eppy.jpg",
+        "name": "Andrea hock",
+        "profession": "UI/UX Designer",
+        "description": "UI/UX designer, adobe creative resident Based in Saint Louis, MO"
+    }
+}

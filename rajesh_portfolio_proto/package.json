@@ -1,0 +1,15 @@
+{
+  "name": "rajesh_portfolio_proto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "sass --watch style:public/style"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.32.4"
+  }
+}

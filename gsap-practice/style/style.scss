@@ -1,0 +1,108 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+}
+img.bc {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  object-position: top;
+  object-fit: cover;
+}
+.date {
+  color: rgb(163, 159, 159);
+  font-family: 'Annifont';
+  height: 10vh;
+  width: 100px;
+  position: absolute;
+  top: 80%;
+  left: 5%;
+  h3 {
+    font-size: 3rem;
+    opacity: 1;
+  }
+}
+header {
+  height: 20vh;
+  width: 40%;
+  background-color: white;
+  overflow: hidden;
+  .nav-closed {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 20vh;
+    ul {
+      list-style: none;
+      display: flex;
+      width: 50%;
+      justify-content: space-between;
+      li {
+        color: rgb(32, 32, 32);
+        font-family: 'Open sans';
+        font-size: 16px;
+        cursor: pointer;
+
+        transition: 0.65s all;
+      }
+      li:hover {
+        color: rgb(219, 118, 118);
+      }
+    }
+    h1 {
+      font-family: 'Josefin sans';
+      font-size: 3.5rem;
+      color: rgb(32, 32, 32);
+      transition: 1s ease-in all;
+      cursor: pointer;
+    }
+    h1:hover {
+      color: rgb(240, 122, 38);
+    }
+  }
+  .nav-opened {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 80vh;
+    width: auto;
+    background-color: rgba(73, 73, 73, 0.123);
+    h1 {
+      font-family: 'Josefin sans';
+      font-size: 3rem;
+      color: rgb(32, 32, 32);
+      text-transform: capitalize;
+      transition: 0.5s ease-in all;
+    }
+    h1:hover {
+      color: rgb(240, 122, 38);
+    }
+    ul {
+      font-family: 'Open sans';
+      font-weight: 600;
+      height: 50%;
+      text-transform: capitalize;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      text-align: center;
+      li {
+        color: rgb(32, 32, 32);
+        list-style: none;
+        transition: 0.65 all;
+      }
+      li:hover {
+        color: rgb(219, 118, 118);
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  font-family: "Poppins";
+}
+// li {
+//   // list-style: url("../adjust-solid.svg");
+//   list-style-type: symbols();
+// }
+details {
+  min-width: 45%;
+  max-width: 50%;
+  margin: 10px 1rem;
+  padding: 1rem;
+  summary {
+    padding: 1rem;
+    cursor: pointer;
+    background: darkblue;
+    color: white;
+    border-radius: 0.25rem;
+  }
+}
+li {
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  list-style: none;
+}
+h1 {
+  margin-left: 1rem;
+}

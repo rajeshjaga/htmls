@@ -1,0 +1,219 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body section {
+  background: #fcfcfc;
+  height: 100vh;
+  width: 100%;
+  color: #1c1c1c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+body section.about {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body section.about p {
+  width: 45%;
+  padding: 1em;
+}
+
+body section.about a {
+  padding: 0.5em 0.9em;
+  background-color: transparent;
+  border: 1.5px solid #1c1c1c;
+  color: #1c1c1c;
+  text-decoration: none;
+  -webkit-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
+  border-radius: 5px;
+}
+
+body section.about a:hover {
+  color: #fcfcfc;
+  background-color: #1c1c1c;
+}
+
+body section nav {
+  height: 100vh;
+  width: 7%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body section nav h1 {
+  font-size: 2em;
+  font-weight: 700;
+}
+
+body section nav ul {
+  height: 75vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body section nav ul li {
+  list-style: none;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+body section nav ul li:hover {
+  text-decoration: underline;
+}
+
+body section nav ul li a {
+  font-size: 1.2em;
+  text-decoration: none;
+  color: #1c1c1c;
+}
+
+body section main {
+  height: 100%;
+  width: 92%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: left;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body section main h1 {
+  font-size: 2em;
+  font-weight: 800;
+}
+
+body section main p {
+  padding: 1em;
+  width: 45%;
+}
+
+body section .header {
+  padding: 0em 0em 2em 0em;
+  font-size: 2em;
+}
+
+body section form.form {
+  height: 5em;
+  background: #1c1c1c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 15em 5em;
+  border-radius: 10px;
+  min-width: 35%;
+}
+
+body section form.form input {
+  outline: none;
+  border: none;
+}
+
+body section form.form .input {
+  background: transparent;
+  color: #fcfcfc;
+  border-bottom: 1px solid #fcfcfc;
+  padding: 0.25em;
+  width: 25vw;
+  margin: 1em 0em;
+  font-size: 1em;
+}
+
+body section form.form #submit {
+  padding: 0.5em 0em;
+  width: 25vw;
+  font-size: 1em;
+  font-weight: bold;
+  background-color: #fcfcfc;
+  border-radius: 5px;
+  margin: 1em 0em;
+}
+
+body section form.form #submit::after, body section form.form #submit::before {
+  outline: none;
+  border: none;
+}
+
+body section form.form a.go-home {
+  margin: 0 auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #727272;
+  -webkit-transition: color ease-in-out 0.5s;
+  transition: color ease-in-out 0.5s;
+}
+
+body section form.form a.go-home:hover {
+  color: #fcfcfc;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+}
+.student {
+  color: #000;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+}
+.student h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: blue;
+  padding: 1rem 5rem;
+}
+.logo a {
+  color: #fcf;
+  background-color: transparent;
+  font-size: 1.5rem;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+nav ul li a {
+  background: none;
+}
+nav ul li {
+  list-style: none;
+  margin-left: 1rem;
+}
+a {
+  color: blue;
+}
+.form {
+  width: 100%;
+  min-height: 50vh;
+  display: grid;
+  place-items: center;
+  background: #fcf;
+  padding: 1rem 2rem;
+}
+input {
+  padding: 0.5rem 1rem;
+  margin: 1rem 0;
+  font-size: 1.2rem;
+}
+form {
+  width: 50%;
+}
+label,
+input {
+  width: fit-content;
+  display: block;
+}
+input[type="radio"] {
+  display: inline;
+}
+label {
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+.footer {
+  background: blueviolet;
+}
+.section-hero {
+  position: relative;
+  min-height: 70vh;
+  min-width: 100%;
+  background-image: url("https://images.pexels.com/photos/2133/man-person-cute-young.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-position: center;
+  backdrop-filter: brightness(0.1);
+  display: grid;
+  place-items: center;
+}
+.section-hero h1 {
+  width: 70%;
+  margin: 0 auto;
+  letter-spacing: 1px;
+  font-size: 3.5rem;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: #fcf;
+}
+button {
+  font-weight: 600;
+  padding: 8px 32px;
+  font-size: 1.25rem;
+  border-radius: 5px;
+  background: aqua;
+  border: none;
+  outline: none;
+  margin-top: 2rem;
+}
+.section-hero p {
+  position: relative;
+  color: #eee;
+  z-index: 1;
+  width: fit-content;
+  margin: 0 auto;
+}
+.flex {
+  display: flex;
+  width: fit-content;
+  align-items: center;
+}
+.section-hero div {
+  width: fit-content;
+  margin: 0 auto;
+}
+.section-hero:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+.section-shop .title {
+  width: 100%;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-top: 2rem;
+}
+
+img {
+  height: 350px;
+  width: 300px;
+  object-fit: fix;
+}
+.card-container p {
+  margin-bottom: 1rem;
+}
+.card-container {
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #000;
+  width: fit-content;
+  background: aqua;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: 0.25s ease;
+}
+.card-container h3 {
+  font-size: 1.2rem;
+}
+.card-container .description {
+  padding: 1rem 1rem;
+}
+.card-container:hover {
+  transform: scale(1.2);
+}
+.logo {
+  color: #fcf;
+  font-size: 1.5rem;
+}
+a {
+  margin-left: 1rem;
+  font-size: 0.8rem;
+  text-decoration: none;
+  color: #fcf;
+  text-align: left;
+  padding: 0.5rem;
+  margin: 5rem 0;
+  background: rebeccapurple;
+}
+.container {
+  flex-wrap: wrap;
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+footer {
+  margin-top: 5rem;
+  background: #fcf;
+  padding: 1rem 5rem;
+}
+footer p {
+  font-weight: bold;
+  font-size: 3.5rem;
+}

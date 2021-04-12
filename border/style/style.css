@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background-color: #1c1c1c;
+  font-family: "SF Pro Display";
+}
+
+body img {
+  height: 1030px;
+  width: 687px;
+  position: absolute;
+  top: -450px;
+  left: 5em;
+  z-index: 0;
+}
+
+body h1 {
+  position: absolute;
+  bottom: 0.2em;
+  left: 0em;
+  font-size: 15em;
+  color: #fcfcfc;
+  z-index: -1;
+}
+
+body h1.border {
+  z-index: 1;
+  color: transparent;
+  -webkit-text-stroke: 2px;
+  -webkit-text-stroke-color: #fcfcfc;
+}
+/*# sourceMappingURL=style.css.map */

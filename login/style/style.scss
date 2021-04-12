@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$josefin:"Josefin Sans";
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: #1c1c1c;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+}
+
+.container {
+    max-height: 60%;
+    max-width: 70%;
+    background-color: #212121;
+    display: flex;
+    position: relative;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.16)
+}
+
+.image-side {
+    width: 50%;
+    height: 100%;
+    position: relative;
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        filter: brightness(75%);
+    }
+    h3.title {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: $josefin;
+        font-weight: "semibold";
+        font-size: 3.5em;
+        white-space: nowrap;
+        color: #fcfcfc;
+    }
+}
+
+.login-side {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: "Quicksand";
+    padding: 1.6em;
+    color: white;
+    .head {
+        height: 70px;
+        font-size: 2.7em;
+        font-weight: bold;
+    }
+    .username,
+    .password {
+        position: relative;
+        margin: 1em 0em;
+        .input {
+            max-height: max-content;
+            width: 80%;
+            padding: 0.5em 0em;
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px rgb(58, 58, 58) solid;
+            color: white;
+            transition: all ease-in 0.5s;
+            font-size: 1.3em;
+            &:focus {
+                border-bottom: 1px white solid;
+                outline: none;
+            }
+        }
+        span.placeholder {
+            letter-spacing: 1px;
+            position: absolute;
+            bottom: 0;
+            padding-bottom: 0.2em;
+            left: 0;
+            transition: all ease-out 0.5s;
+        }
+    }
+    a {
+        min-height: 30px;
+        max-width: 300px;
+        text-align: center;
+        padding: 0.7em 1em;
+        background-color: #0079D5;
+        color: white;
+        text-decoration: none;
+        border-radius: 10px;
+    }
+}
+
+.placeholder-Style {
+    font-size: 14px;
+    top: -10px;
+}
+
+.check {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin: 1em 0em;
+    span {
+        margin-left: 10px;
+    }
+}

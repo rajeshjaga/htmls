@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>meditate</title>
+</head>
+
+<body>
+    <div class="app">
+        <div class="video-container">
+            <video loop>
+                <source src="./assests/video/rain.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="time">
+            <button data-time='120'>2 Minutes</button>
+            <button data-time='300'>5 Minutes</button>
+            <button data-time='600'>10 Minutes</button>
+        </div>
+        <div class="buttons">
+            <audio><source src='./assests/sounds/rain.mp3'></audio>
+            <img src="./assests/svg/play.svg" alt="play">
+
+            <svg class="outline" width="453" height="453" viewBox="0 0 453 453" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="226.5" cy="226.5" r="216.5" stroke="white" stroke-width="20"/>
+                </svg>
+            <svg class="move-outline" width="453" height="453" viewBox="0 0 453 453" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="226.5" cy="226.5" r="216.5" stroke="#018EBA" stroke-width="20"/>
+                    </svg>
+            <h3 id="time">0:00</h3>
+        </div>
+        <div class="music-selector">
+            <button data-sound="./assests/sounds/rain.mp3" data-video="./assests/video/rain.mp4">
+            <img src="./assests/svg/rain.svg" alt="rain">
+            </button>
+            <button data-sound="./assests/sounds/beach.mp3" data-video="./assests/video/beach.mp4">
+            <img src="./assests/svg/beach.svg" alt="beach">
+            </button>
+        </div>
+    </div>
+    <script src="./script/app.js">
+    </script>
+</body>
+
+</html>

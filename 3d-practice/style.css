@@ -1,0 +1,47 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family:"Sofia Pro";
+	perspective: 1500px;
+}
+h1.title{
+	text-align:center;
+	margin:2rem 0;
+}
+h1{
+	text-transform: capitalize;
+	padding-bottom:2rem;
+}
+.card-container{
+	width: 80%;
+	margin: 0 auto;
+	background: #dee;	
+	padding : 5rem 10rem;
+}
+.card{
+	transform-style:preserve-3d;
+	display: flex;
+	height: 300px;
+	width: 60%;
+	margin:0 auto;
+	background: #fff;
+	filter:drop-shadow(0 5px 10px rgba(0,0,0,0.2));
+	border-radius: 20px;
+	overflow:hidden;
+}
+.card img{
+	height: auto;
+	width: 50%;
+	object-position: 10% 20%;
+	object-fit: cover;
+}
+.card div{
+	width: 50%;
+}
+.card .description{
+	text-align: justify;
+	padding:1.5rem 2rem;
+}

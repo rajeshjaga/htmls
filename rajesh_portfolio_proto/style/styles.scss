@@ -1,0 +1,51 @@
+@use "./resets";
+@use "./prefixes";
+nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  h3 {
+    color: white;
+    flex: 1;
+  }
+
+  ul {
+    display: flex;
+    width: auto;
+    justify-content: space-between;
+    li {
+      color: white;
+      cursor: pointer;
+      list-style-type: none;
+      margin-left: 2rem;
+    }
+    @media (max-width: 500px) {
+      display: none;
+    }
+  }
+}
+section {
+  min-height: 100vh;
+}
+.section-one {
+  background-image: url("/assests/Group\ 8@2x.png");
+  background-position: center;
+  color: white;
+  display: grid;
+  place-items: center;
+  h1 {
+    font-size: 96px;
+    margin-bottom: 2rem;
+    line-height: 1;
+  }
+  p {
+    color: #ddd;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+  }
+}

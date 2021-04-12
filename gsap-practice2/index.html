@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>example5</title>
+  </head>
+  <body>
+    <div class="bc"></div>
+    <main>
+      <div class="des">
+        <span> Hello</span>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi
+          blanditiis aperiam laborum modi provident commodi ullam earum, dolorum
+          illo maxime natus sequi neque dolore vitae at quaerat eum cum. Totam!
+        </p>
+        <a href="#">Start</a>
+      </div>
+    </main>
+    <aside>
+      <img src="./assests/person-holding-pendant-light-973506.jpg" alt="" />
+    </aside>
+    <script src="./script/Gsap.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/CSSRulePlugin.js"
+      integrity="sha256-tn6ZPy5AIkyQOuXs5FS7DscimqG7DwHZMKZhGZJF08c="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      var rule = CSSRulePlugin.getRule('span:after');
+
+      gsap.fromTo('.bc', { x: '-100%', stagger: 0.6 }, { x: 0, duration: 0.5 });
+
+      gsap.from('.des', {
+        opacity: 0,
+        duration: 1,
+        y: -50,
+        ease: Power2.easeInOut,
+        delay: 0.7,
+      });
+      gsap.to(rule, { cssRule: { scaleY: 0 }, duration: 1, delay: 1.5 });
+      gsap.from('aside', { opacity: 0, duration: 1, y: 50, delay: 0.5 });
+      const but = document.querySelector('a');
+      function a() {
+        gsap.to('.des', { opacity: 0, duration: 0.5, y: 50, delay: 0.5 });
+        gsap.to('aside', { opacity: 0, duration: 0.5, y: -50 });
+        gsap.fromTo('.bc', { x: 0 }, { x: '-100%', delay: 0.5, duration: 1 });
+      }
+      but.addEventListener('click', () => {
+        a();
+      });
+    </script>
+  </body>
+</html>

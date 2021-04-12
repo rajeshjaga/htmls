@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$bg: #fff;
+$fg: #000;
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  background: $bg;
+  color: $fg;
+  font-family: "Poppins";
+}
+section {
+  height: 100%;
+  width: 100%;
+  padding: 15rem 5rem;
+}
+h3 {
+  width: 60%;
+  font-size: 1.25rem;
+  letter-spacing: 0.1px;
+  line-height: 2rem;
+  font-weight: 500;
+  color: lighten($fg, 30%);
+}
+h1 {
+  font-size: 5rem;
+}
+@media (prefers-color-scheme: dark) {
+  $bg: #000;
+  $fg: #fff;
+  body {
+    background: $bg;
+  }
+  h1 {
+    color: $fg;
+  }
+  h3 {
+    color: darken($fg, 20%);
+  }
+}

@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: #1c1c1c;
+    font-family: "SF Pro Display";
+    img {
+        height: 1030px;
+        width: 687px;
+        position: absolute;
+        top: -450px;
+        left: 5em;
+        z-index: 0;
+    }
+    h1 {
+        position: absolute;
+        bottom: 0.2em;
+        left: 0em;
+        font-size: 10em;
+        color: #fcfcfc;
+        z-index: -1;
+        &.border {
+            z-index: 1;
+            color: transparent;
+            -webkit-text-stroke: 2px;
+            -webkit-text-stroke-color: #fcfcfc;
+            text
+        }
+    }
+}

@@ -1,0 +1,232 @@
+:root {
+    --white: #fcfcfc;
+    --black: #1c1c1c;
+    --bg: #1c1c1c;
+    --txt: #fcfcfc;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    color: var(--black);
+    background: var(--white);
+}
+
+// @media (prefers-color-scheme:dark) {
+//     body {
+//         color: var(--white);
+//         background: var(--black);
+//     }
+// }
+.menu {
+    margin: 0 auto;
+    padding: 1em 0;
+    height: 10vh;
+    width: 10vh;
+    cursor: pointer;
+    .bar.One,
+    .bar.Two,
+    .bar.Three {
+        height: 20%;
+        width: 100%;
+        background: var(--white);
+        margin: 10px 0;
+        transition: all .2s ease-in-out;
+    }
+}
+
+.change.bar.One {
+    transform: rotate(-45deg) translate(-5px, 5px);
+}
+
+.change.bar.Two {
+    opacity: 0;
+}
+
+.change.bar.Three {
+    transform: rotate(45deg) translate(-17px, -20px);
+}
+
+//accordion
+section {
+    padding: 0 2em;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    text-align: left;
+    position: relative;
+    button.accordion {
+        outline: none;
+        text-align: left;
+        padding: 1.5em 2em;
+        width: 100%;
+        border: none;
+        background: #fcf;
+        border-radius: 10px;
+        &:hover {
+            background: rgb(255, 137, 255);
+        }
+    }
+    .panel {
+        text-align: left;
+        padding: 1em;
+        overflow: hidden;
+        transition: 0.5s all linear;
+    }
+}
+
+.display {
+    display: none;
+}
+
+section .tabContent.play {
+    display: block;
+}
+
+.tab {
+    position: relative;
+    width: 100%;
+    padding-left: 0.5em;
+    background: #eee;
+    margin: 0 auto;
+    button {
+        outline: none;
+        border: none;
+        height: 100%;
+        padding: 1em 1em;
+        background: none;
+        &:hover {
+            background: rgb(145, 145, 145);
+        }
+    }
+}
+
+.tabContent {
+    width: 100%;
+    padding: 2em;
+    border: 1px solid #ccc;
+    border-top: none;
+    display: none;
+    h3 {
+        font-size: 2em;
+        padding: 0.2em 0;
+    }
+    p {
+        font-size: 1em;
+    }
+}
+
+.tab button.active {
+    background-color: #ccc;
+}
+
+nav {
+    height: 10vh;
+    background-color: #ccc;
+    width: 90%;
+    margin: 10em auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    h1 {
+        flex: 1;
+        padding: 0 2em;
+    }
+    ul {
+        list-style: none;
+        display: flex;
+        li {
+            margin: 0 1.65em;
+        }
+    }
+    i.fa {
+        display: none;
+        margin-right: 1em;
+    }
+}
+
+@media screen and (max-width:691px) {
+    nav {
+        ul {
+            li {
+                display: none;
+            }
+        }
+        i.fa {
+            display: block;
+            cursor: pointer;
+        }
+    }
+}
+
+.responsive {
+    position: relative;
+    li {
+        float: none;
+        display: block;
+        text-align: center;
+    }
+}
+
+section#switch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--txt);
+    overflow-x: hidden;
+    input[type=checkbox] {
+        display: none;
+    }
+    .container {
+        height: 100vh;
+        width: 100vw;
+        background: var(--txt);
+        color: var(--bg);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        label {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 2.5em;
+            width: 5em;
+            background: var(--bg);
+            border-radius: 50px;
+            position: relative;
+            font-size: 1.5em;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.17);
+            cursor: pointer;
+            .pointer {
+                position: absolute;
+                top: 0.25em;
+                left: 0.25em;
+                background: var(--txt);
+                height: 2em;
+                width: 2em;
+                border-radius: 50px;
+                transition: 0.3s ease;
+            }
+            .fa {
+                color: var(--txt);
+            }
+        }
+    }
+}
+
+#checkbox:checked+.container label .pointer {
+    transform: translateX(3.8rem);
+}
+
+#checkbox:checked+.container {
+    --txt: var(--black);
+    --bg: var(--white);
+}

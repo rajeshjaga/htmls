@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    font-family: "SF Pro Display", sans-serif;
+}
+
+img.bg {
+    height: 100%;
+    width: 40%;
+    object-fit: cover;
+    z-index: -1;
+    position: absolute;
+    right: 0px;
+    filter: brightness(70%);
+}
+
+.title {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    font-size: 4em;
+    font-family: "New York";
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    padding-top: 1.5em;
+    letter-spacing: 5px;
+    color: #7fa7ac;
+}
+
+section.main {
+    height: 100vh;
+    width: 60%;
+    background: #fcfcfc;
+    display: flex;
+    text-align: right;
+    justify-content: left;
+    align-items: center;
+}
+
+.description {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    padding-right: 1.5em;
+    padding-top: 10em;
+    color: #8D888A;
+    letter-spacing: 0.2px;
+    .author {
+        position: relative;
+        margin-left: auto;
+        font-size: 2.5em;
+        width: 30%;
+        color: #272028;
+        font-weight: 600;
+        padding: 0em 0em 1em 0em;
+        &::before {
+            content: '';
+            height: 50%;
+            width: 0.2em;
+            background-color: #6D686F;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: -30px;
+            vertical-align: text-bottom;
+        }
+    }
+    .released {
+        font-size: 1em;
+        padding: 0em 0em 1em 0em;
+    }
+    .small-description {
+        width: 32%;
+        margin-left: auto;
+        font-size: 1em;
+    }
+}
+
+aside {
+    z-index: 10000;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 50%;
+    width: 5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column-reverse;
+}
+
+a {
+    transform: rotate(-90deg);
+    text-decoration: none;
+    color: #645F64;
+    white-space: nowrap;
+    line-height: 1.2em;
+    transition: all 0.3s ease-out;
+}
+
+a:hover {
+    border-bottom: 2px solid #272028;
+    color: #272028;
+}
+
+@media (max-width:1024px) {
+    .title h1 {
+        font-size: 1em;
+    }
+    .description {
+        font-size: 0.7em;
+    }
+}

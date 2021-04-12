@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body::-webkit-scrollbar {
+  width: 0.5rem;
+  height: 0.5rem;
+  background: transparent;
+}
+body::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: grey;
+  border-radius: 10px;
+}
+header {
+  box-shadow: 0px 3px 10px rgb(0, 0, 0, 0.3);
+  display: flex;
+  position: sticky;
+  top: 0%;
+  background-color: white;
+}
+nav h1,
+nav ul {
+  font-family: 'Josefin-Sans', sans-serif;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  flex: 1;
+}
+nav {
+  min-height: 10vh;
+  margin: auto;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section h1 {
+  font-size: 50px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-transform: capitalize;
+}
+section.home {
+  background: #ffe259;
+  background: -webkit-linear-gradient(to right, #ffa751, #ffe259);
+  background: linear-gradient(to right, #ffa751, #ffe259);
+}
+section.about {
+  background: #5433ff; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #a5fecb,
+    #20bdff,
+    #5433ff
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #a5fecb,
+    #20bdff,
+    #5433ff
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+section.contact {
+  background: #00416a;
+  background: -webkit-linear-gradient(to right, #ffe000, #799f0c, #00416a);
+  background: linear-gradient(to right, #ffe000, #799f0c, #00416a);
+}
+.buble {
+  position: absolute;
+  z-index: -2;
+  transform: scale(1.5);
+  transition: 0.5s ease;
+}

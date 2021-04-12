@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+section.s1 {
+  background-image: url(../assests/geometric-decoration-5836.jpg);
+  background-size: cover;
+}
+section.s2 img {
+  height: 30%;
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  transform: translate(-10%, -50%);
+}
+section.s3 {
+  background-image: url(./assests/arts-build-close-up-commerce-273230.jpg);
+  background-size: cover;
+}
+section h1 {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  font-size: 50px;
+  cursor: pointer;
+}
+section h1 {
+  background: linear-gradient(to top, #7c94f9, #1414ef);
+  font-size: 64px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+section.s2 {
+  background: linear-gradient(to left, #f1f1f1, #c9c9c9);
+  text-transform: capitalize;
+}
+section.s2 h1 {
+  background: linear-gradient(to left, #646464, #a2a2b3);
+  font-size: 50px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+section p {
+  width: 30%;
+  margin: 20%;
+  margin-left: 20%;
+  font-size: 20px;
+  font-weight: 600;
+}

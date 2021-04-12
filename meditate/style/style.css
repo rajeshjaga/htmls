@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  font-family: 'Poppins';
+}
+
+.app {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.app .time,
+.app .music-selector,
+.app .buttons {
+  height: 100vh;
+  width: 30%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.app .buttons {
+  position: relative;
+}
+
+.app .buttons svg {
+  position: absolute;
+  height: 50%;
+  width: 50%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.app .buttons img {
+  cursor: pointer;
+}
+
+.app .buttons #time {
+  position: absolute;
+  bottom: 20%;
+  font-size: 1.9em;
+  font-weight: 600;
+}
+
+.app .time button {
+  outline: none;
+  background-color: transparent;
+  padding: 0.8em;
+  border-radius: 120px;
+  border: 1px solid #fcfcfc;
+  color: #fcfcfc;
+  font-size: 1.6em;
+  cursor: pointer;
+}
+
+video {
+  z-index: -1;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.music-selector button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.music-selector button img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+/*# sourceMappingURL=style.css.map */
